@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { editBudget } from "../features/budgets/budgetsSlice";
 import { selectTransactions } from "../features/transactions/transactionsSlice";
-import { toFaNum } from "../utilities/toFaNum";
 
 export default function Budget({ budget }) {
   const dispatch = useDispatch();
