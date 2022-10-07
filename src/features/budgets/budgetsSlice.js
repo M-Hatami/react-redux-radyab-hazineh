@@ -1,14 +1,14 @@
 import { createSlice } from "@reduxjs/toolkit";
 export const CATEGORIES = [
-  "housing",
-  "food",
-  "transportation",
-  "utilities",
-  "clothing",
-  "healthcare",
-  "personal",
-  "education",
-  "entertainment",
+  "مکان",
+  "غذا",
+  "حمل و نقل",
+  "قبوض امکانات",
+  "لباس",
+  "درمان",
+  "حقوق و مزایا",
+  "تحصیل",
+  "متفرقه",
 ];
 
 const initialState = CATEGORIES.map((category) => ({

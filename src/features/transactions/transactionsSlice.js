@@ -1,24 +1,24 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice } from "@reduxjs/toolkit";
 
 export const CATEGORIES = [
-  "housing",
-  "food",
-  "transportation",
-  "utilities",
-  "clothing",
-  "healthcare",
-  "personal",
-  "education",
-  "entertainment",
+  "مکان",
+  "غذا",
+  "حمل و نقل",
+  "قبوض امکانات",
+  "لباس",
+  "درمان",
+  "حقوق و مزایا",
+  "تحصیل",
+  "متفرقه",
 ];
 const initialState = Object.fromEntries(
   CATEGORIES.map((category) => [category, []])
 );
 
 const transactionsSlice = createSlice({
-  name: 'transactions',
+  name: "transactions",
   initialState: initialState,
-  reducers:{
+  reducers: {
     addTransaction: (state, action) => {
       const newTransactionsForCategory = [
         ...state[action.payload.category].slice(),
@@ -40,14 +40,13 @@ const transactionsSlice = createSlice({
         ...state,
         [action.payload.category]: newTransactionsForCategory,
       };
-    }
-  }
-}) 
+    },
+  },
+});
 
 export const selectTransactions = (state) => state.transactions;
 export const selectFlattenedTransactions = (state) =>
   Object.values(state.transactions).reduce((a, b) => [...a, ...b], []);
 
-
-export const {addTransaction, deleteTransaction} = transactionsSlice.actions;
+export const { addTransaction, deleteTransaction } = transactionsSlice.actions;
 export default transactionsSlice.reducer;

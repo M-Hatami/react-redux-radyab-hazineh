@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap");
 
+* {
+  font-family: Tahoma, "Segoe UI", sans-serif, "Noto Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Apple Color Emoji";
+}
+
 :root {
   --main-text-color: #141c3a;
   --blue: #3069f0;
@@ -10,41 +15,38 @@
 }
 
 body {
-  font-family: "Oxygen", sans-serif;
   color: var(--main-text-color);
   padding: 24px 20px 0px 20px;
   margin: 0;
 }
 
 h1 {
-  font-size: 53px;
   font-weight: bold;
   margin-top: 0;
   margin-bottom: 32px;
 }
 
 h2 {
-  font-size: 48px;
   font-weight: bold;
   margin-top: 0px;
   margin-bottom: 32px;
 }
 
 h3 {
-  font-size: 30px;
   font-weight: bold;
-  margin: 2px 0px 0px 0px;
+  margin: 2px 0px 0px 5px;
 }
 
 h4 {
-  font-size: 24px;
   font-weight: bold;
   margin: 0;
 }
 
+.amount-input {
+  margin-left: 5px;
+}
 .category-label {
   color: var(--gray);
-  font-size: 15px;
   font-weight: bold;
 }
 
@@ -74,7 +76,6 @@ input {
   padding: 6px 12px;
   border-radius: 6px;
   border: solid 1px #141c3a;
-  font-size: 18px;
   font-weight: bold;
   background: var(--white);
   margin-left: 16px;
@@ -121,7 +122,6 @@ input {
 
 .new-transaction-section label {
   display: block;
-  font-size: 15px;
   font-weight: bold;
   margin-bottom: 8px;
 }
@@ -137,7 +137,6 @@ input {
   border-radius: 6px;
   border: solid 1px #ffffff;
   background-color: #141c3a;
-  font-size: 18px;
   font-weight: bold;
   color: #ffffff;
   cursor: pointer;
@@ -167,7 +166,6 @@ select {
   border-radius: 6px;
   border: solid 1px #141c3a;
   background-color: #ffffff;
-  font-size: 16px;
   font-weight: bold;
   display: flex;
   margin-bottom: 16px;
@@ -175,7 +173,6 @@ select {
 
 .description {
   font-style: italic;
-  font-size: 16px;
   font-weight: normal;
 }
 

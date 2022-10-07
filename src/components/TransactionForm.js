@@ -29,11 +29,11 @@ export default function TransactionForm({ categories }) {
 
   return (
     <section className="new-transaction-section">
-      <h2>New Transaction</h2>
+      <h2>تراکنش جدید</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-wrapper">
           <div>
-            <label htmlFor="category">Category</label>
+            <label htmlFor="category">طبقه بندی</label>
             <select
               id="category"
               value={category}
@@ -48,7 +48,7 @@ export default function TransactionForm({ categories }) {
           </div>
 
           <div>
-            <label htmlFor="description">Description</label>
+            <label htmlFor="description">توصيف</label>
             <input
               id="description"
               value={description}
@@ -58,7 +58,7 @@ export default function TransactionForm({ categories }) {
           </div>
 
           <div>
-            <label htmlFor="amount">Amount</label>
+            <label htmlFor="amount">مبلغ</label>
             <input
               id="amount"
               value={amount}
@@ -69,7 +69,7 @@ export default function TransactionForm({ categories }) {
           </div>
         </div>
 
-        <button>Add Transaction</button>
+        <button>افزودن تراکنش</button>
       </form>
     </section>
   );
