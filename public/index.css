@@ -1,7 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap");
 
+@font-face {
+  font-family: Vazirmatn;
+  src: url(./fnt/Vazirmatn-Regular.woff2) format("woff2"),
+    url(./fnt/Vazirmatn-Regular.ttf) format("truetype");
+  font-weight: normal;
+  unicode-range: U+0600 –06FF;
+}
+
 * {
-  font-family: Tahoma, "Segoe UI", sans-serif, "Noto Color Emoji",
+  font-family: Vazirmatn, Tahoma, "Segoe UI", sans-serif, "Noto Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Apple Color Emoji";
 }
 
